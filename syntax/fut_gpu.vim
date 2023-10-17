@@ -21,10 +21,11 @@ syn keyword function curry uncurry
 syn keyword function id const
 syn keyword function segmap segred
 syn keyword function redomap scanomap
+syn keyword function add64 add32 smin64 mul_nw64
 
 syn keyword boolean true false
 
-syn match FutIdentifier "[a-zA-Z_][a-zA-Z0-9_']*" skipwhite contained contains=NONE
+syn match FutIdentifier "[a-zA-Z_]*_[0-9]*" skipwhite contained contains=NONE
 
 syn keyword type i8 i16 i32 i64 u8 u16 u32 u64 int real bool char f16 f32 f64
 
