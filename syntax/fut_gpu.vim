@@ -8,8 +8,8 @@ syn match float "\v([eE][\+\-]?[0-9]+)"
 syn keyword conditional if then else
 syn keyword Statement loop with entry for while do in local type val
 syn keyword keyword concat zip unzip unsafe return returns
-syn keyword FutharkBinding let entry nextgroup=FutIdentifier skipwhite skipempty
-syn keyword PreProc module open import nextgroup=FutIdentifier skipwhite skipempty
+syn keyword FutharkBinding let entry skipwhite skipempty
+syn keyword PreProc module open import skipwhite skipempty
 syn keyword FutharkCase match case
 
 syn keyword function map map1 map2 map3 map4 map5 stream_map stream_map_per
@@ -25,7 +25,7 @@ syn keyword function add64 add32 smin64 mul_nw64
 
 syn keyword boolean true false
 
-syn match FutIdentifier "[a-zA-Z_]*_[0-9]*" skipwhite contained contains=NONE
+syn match Identifier "[a-zA-Z_]*_[0-9]*" skipwhite 
 
 syn keyword type i8 i16 i32 i64 u8 u16 u32 u64 int real bool char f16 f32 f64
 
