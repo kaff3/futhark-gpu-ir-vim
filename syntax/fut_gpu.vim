@@ -7,7 +7,7 @@ syn match float "\v([eE][\+\-]?[0-9]+)"
 
 syn keyword conditional if then else
 syn keyword Statement loop with entry for while do in local type val
-syn keyword keyword concat zip unzip unsafe
+syn keyword keyword concat zip unzip unsafe return returns
 syn keyword FutharkBinding let entry nextgroup=FutIdentifier skipwhite skipempty
 syn keyword PreProc module open import nextgroup=FutIdentifier skipwhite skipempty
 syn keyword FutharkCase match case
@@ -19,6 +19,8 @@ syn keyword function replicate scatter drop
 syn keyword function rotate split flatten unflatten
 syn keyword function curry uncurry
 syn keyword function id const
+syn keyword function segmap segred
+syn keyword function redomap scanomap
 
 syn keyword boolean true false
 
