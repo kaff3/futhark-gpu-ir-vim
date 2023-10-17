@@ -6,7 +6,7 @@ function! FutharkIndent()
   let prev = getline(prevNum)
 
   " Indent extra if matching these patterns
-  if prev =~ "=$" || prev =~ "->$" || prev =~ "do$"
+  if prev =~ "=$" || prev =~ "\$" || prev =~ ",$"
     return indent(prevNum) + &shiftwidth
 
   " Else keep same level of indentation
