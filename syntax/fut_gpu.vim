@@ -25,7 +25,7 @@ syn keyword function add64 add32 smin64 mul_nw64
 
 syn keyword boolean true false
 
-syn match Identifier "[a-zA-Z_]*_[0-9]+" skipwhite 
+syn match Identifier "[a-zA-Z_]*_[0-9]\+"
 
 syn keyword type i8 i16 i32 i64 u8 u16 u32 u64 int real bool char f16 f32 f64
 
