@@ -8,8 +8,8 @@ syn match float "\v([eE][\+\-]?[0-9]+)"
 syn keyword conditional if then else
 syn keyword Statement loop with entry for while do in local type val
 syn keyword keyword concat zip unzip unsafe return returns
-syn keyword FutharkBinding let entry skipwhite skipempty
-syn keyword PreProc module open import skipwhite skipempty
+syn keyword FutharkBinding let entry 
+syn keyword PreProc module open import
 syn keyword FutharkCase match case
 
 syn keyword function map map1 map2 map3 map4 map5 stream_map stream_map_per
